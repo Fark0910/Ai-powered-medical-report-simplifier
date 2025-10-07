@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Ai powered Medical report parser</title>
+</head>
+<body>
+   
+
+<video autoplay muted loop playsinline id="bg-video" >
+
+      <source src="/videos/overly.mp4" type="video/mp4">
+
+    </video>
+<div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="min-height: 100vh;">
+
+    <h1 class="title animate__animated animate__fadeInDown" style="color:whitesmoke">MediReport</h1>
+    
+ 
+   <form class="box animate__animated animate__fadeInUp" id="shortenForm" style="height: 80vh;min-height: 300px;max-height:600px;width:80vw;min-width: 300px;max-width: 470px;background-color:rgba(245, 245, 245, 0.21);" action="/shorten" method="Post">
+        <video autoplay muted loop playsinline class="form-video  animate__animated animate__fadeInUp" >
+      <source class="sor is-skeleton" src="/videos/bars.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+        <div class="field">
+            <label class="label is-size-4 animate__animated animate__fadeInLeft" style="color:whitesmoke">Type your content here</label>
+            <div class="control is-size-4">
+                <input class="input" id="urlInput" style="opacity: 0.8;background-color: #52d1cbae;" placeholder="Type Url to be shortend" type="text" name="originalUrl" required/>
+            </div>
+        </div>
+
+        
+        <button class="button is-clickable is-size-5 mt-5 lo_butt" style="background-color: #52d1cb;color:whitesmoke;width:100%;">Generate Url</button>
+       <div id="result" class="has-text-white is-size-5 mt-4"></div>
+    </form>
+    
+    
+   
+    <span class="icon-text has-text-warning mt-3 is-size-4 animate__animated animate__fadeInUp">
+            <span class="icon ">
+                <i class="fas fa-user-graduate"></i>
+            </span>
+            <span class="">Dashboard?<a class="is-size-5" href="/dashboard">Click here</a></span>
+    </span>
+  
+</div>
+    
+
+    
+</body>
+
+</html>

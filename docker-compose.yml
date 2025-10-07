@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  ocr-service:
+    build: ./ocr_service
+    volumes:
+      - ./uploads:/app/uploads
+    container_name: ocr-service
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./ocr_service/.env
+    networks:
+      - my-network
+
+  normalization-service:
+    build: ./normalization_service
+    container_name: normalize-service
+    ports:
+      - "5001:5001"
+    env_file:
+      - ./normalization_service/.env
+    networks:
+      - my-network
+
+
+  patient-service:
+    build: ./patient_service
+    container_name: patient-service
+    ports:
+      - "5002:5002"
+    env_file:
+      - ./patient_service/.env
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
