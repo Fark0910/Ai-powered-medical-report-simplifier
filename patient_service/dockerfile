@@ -1,26 +1,9 @@
-# 1️⃣ Base image (Node version match)
 FROM node:22.14.0-alpine
-
-# 2️⃣ Working directory
 WORKDIR /app
-
-# 3️⃣ Copy package.json & package-lock.json
 COPY package*.json ./
-
-# 4️⃣ Install dependencies
 RUN npm install
-
-# 5️⃣ Copy rest of the project
 COPY . .
-
-# 6️⃣ Install typescript globally
 RUN npm install -g typescript
-
-# 7️⃣ Compile TypeScript
 RUN npm run build
-
-# 8️⃣ Expose port
 EXPOSE 5002
-
-# 9️⃣ Start service
 CMD ["npm", "start"]
