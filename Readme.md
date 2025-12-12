@@ -65,18 +65,18 @@ Endpoint: POST /patient
 ---
 
 ### 🧰 Technologies & Tools Used
-
+```bash
 Category	Tools/Frameworks
 
---Language:TypeScript
---AI Model:Gemini API
---OCR Engine:Tesseract.js
---Containerization:Docker, Docker Compose
---API Testing:Postman / cURL
---Architecture:Microservices
---projectstructure:MVC
---Logging	Console + structured logs
---Version Control	Git & GitHub
+-Language:TypeScript
+-AI Model:Gemini API
+-OCR Engine:Tesseract.js
+-Containerization:Docker, Docker Compose
+-API Testing:Postman / cURL
+-Architecture:Microservices
+-projectstructure:MVC
+-Logging	Console + structured logs
+-Version Control:Git & GitHub
 
 
 
