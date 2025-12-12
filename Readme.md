@@ -217,7 +217,7 @@ for post /noocr
 ---
 
 ### 📂 Repository Structure
-
+```bash
 root/
 -├── ocr_service/
 -│   ├── folders...
