@@ -123,7 +123,7 @@ curl -X POST http://localhost:5000/noocr \
 
 ### 🧪 Sample Workflow Screenshot
 
-📸 (Refer to image folder — to be added by user)
+📸 (Refer to image folder)
 
 ![container](./images/docker.png)
 ![container](./images/ocrinput.png)
