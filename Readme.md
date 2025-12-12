@@ -1,10 +1,6 @@
 
 ### 🧠 AI-Powered Medical Report Simplifier Backend
-
-Candidate: Fardeen khan
-
-Problem Statement: 7
-
+A simple Backened that Simplifies medical reports
 
 ---
 
