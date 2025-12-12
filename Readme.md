@@ -68,15 +68,15 @@ Endpoint: POST /patient
 
 Category	Tools/Frameworks
 
-Language	TypeScript
-AI Model	Gemini API
-OCR Engine	Tesseract.js
-Containerization	Docker, Docker Compose
-API Testing	Postman / cURL
-Architecture	Microservices
-project structure  MCV
-Logging	Console + structured logs
-Version Control	Git & GitHub
+--Language:TypeScript
+--AI Model:Gemini API
+--OCR Engine:Tesseract.js
+--Containerization:Docker, Docker Compose
+--API Testing:Postman / cURL
+--Architecture:Microservices
+--projectstructure:MVC
+--Logging	Console + structured logs
+--Version Control	Git & GitHub
 
 
 
@@ -168,17 +168,15 @@ note:Add in the same way in each enviroment
 
 ### 🧠 Architecture and Data Handling Choices
 
-Microservices separation ensures modularity and scalability.
+--Microservices separation ensures modularity and scalability.
 
-Stateless communication between services (JSON REST calls).
+--Stateless communication between services (JSON REST calls).
 
-Gemini AI adds medical intelligence and context understanding.
+--Gemini AI adds medical intelligence and context understanding.
 
-Normalization layer acts as a pre-processor for data consistency.
+--Normalization layer acts as a pre-processor for data consistency.
 
-Docker simplifies environment replication and portability.
-
-
+--Docker simplifies environment replication and portability.
 
 ---
 
@@ -221,25 +219,25 @@ for post /noocr
 ### 📂 Repository Structure
 
 root/
-├── ocr_service/
-│   ├── folders...
-│   ├── Dockerfile
-│   └── package.json
-|   └── index.ts
+-├── ocr_service/
+-│   ├── folders...
+-│   ├── Dockerfile
+-│   └── package.json
+-|   └── index.ts
      
-├── normalization_service/
-│   ├── folders...
-│   ├── Dockerfile
-│   └── package.json
-|   └── index.ts
-├── patient_service/
-│   ├── folders...
-│   ├── Dockerfile
-│   └── package.json
-|   └── index.ts
-├── docker-compose.yml
-└── README.md
-└── images
+-├── normalization_service/
+-│   ├── folders...
+-│   ├── Dockerfile
+-│   └── package.json
+-|   └── index.ts
+-├── patient_service/
+-│   ├── folders...
+-│   ├── Dockerfile
+-│   └── package.json
+-|   └── index.ts
+-├── docker-compose.yml
+-└── README.md
+-└── images
 
 
 
