@@ -190,7 +190,9 @@ for post /noocr
 
 -Gemini AI API response latency under heavy load may be poor sometimes.Value mismatch, hallucinations are common problems.
 
--Multi-language reports not yet supported.
+-Multi-language reports not yet supported
+
+-Services are not losely coupled hence Not purely microservice since there is issue of cascading failure if not handled properly.
 
 
 
